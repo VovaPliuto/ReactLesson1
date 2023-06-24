@@ -19,6 +19,7 @@ export const Statistics = ({ stats }) => {
         {stats.map(({ id, title, total }, index) => {
           return (
             <StatisticItem
+              key={id}
               id={id}
               title={title}
               total={total}
